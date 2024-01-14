@@ -1,0 +1,14 @@
+/* styles.css */
+
+/* Import τα υπόλοιπα αρχεία CSS */
+@import url('Navbar/navbar.css');
+@import url('Profile/profile.css');
+@import url('Lessons/lessons.css');
+/* Προσθέστε περισσότερα @import καθώς χρειάζεστε */
+
+/* Προσθήκη κοινών κανόνων στυλ αν χρειάζεται */
+body {
+    font-family: 'Arial', sans-serif;
+    margin-top: 40px;
+    /* Προσθέστε άλλους κοινούς κανόνες στυλ */
+}

@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* 1. Contain All*/
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #1e90ff;  
+    /*To add backround image 
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(backround.png ) ;
+    
+    background-position: center;
+    background-size: cover;
+    */
+    position: relative;
+    
+}
+/* 2. Contain only the form fields()*/
+
+
+.form-box{
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    min-height: 570px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background : #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 12px;
+}
+/* 2. Sign in/up letter in the top */
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    position: relative;
+    
+    
+}
+.form-box h1::after{
+    content: "";
+    width: 50px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -11px;
+    left: 44%;
+    transform: translateX(-50);
+}
+/* 2.*/
+
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+   
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    width: 100%;
+    outline: 0px;
+    padding: 18px 15px;
+    border-radius: 20px;
+    border : 1px solid #3c00a0;
+}
+
+/* 2.The radio buttons*/
+.input-radio input {
+    display: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* 2.*/
+.input-radio {
+    height: 30px;
+    width: var(--container_width);
+    background-color: #ffffff;
+    --container_width: 300px;
+    display: flex;
+}
+/* 2.The radio buttons names*/
+.input-radio label {
+    border: 2px dotted #464141;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+/* 2. The radio buttons that checked/selected*/
+.input-radio label:has(input:checked) {
+    border: 5px solid #3c00a0;
+    color : #3c00a0;
+}
+
+/*//////////////////////////////////////////////////*/
+
+/* 3. Contain the Sign in/up buttons*/
+
+.btn-field input{   
+    margin: 25px 0px 25px 0px;
+    flex-basis: 100%;
+    width: 45%;
+    background: #3c00a0;
+    color: #fff;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    text-align: center;
+
+}
+
+.changeSign-field{
+    display: inline-flex;
+    
+}
+.changeSign-field button{   
+    border: 0;
+    color: blue;
+    text-decoration:underline;
+    text-underline-offset: 30%;
+
+}
+
+
+

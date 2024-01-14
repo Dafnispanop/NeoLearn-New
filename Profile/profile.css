@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 600px;
+    border: 1px solid #dcdcdc;
+    padding: 20px;
+    /* margin-top: 50px; */
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.input-field label {
+    font-size: 18px;
+}
+
+.btn-field {
+    margin-top: 20px;
+}
